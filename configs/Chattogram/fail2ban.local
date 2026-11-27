@@ -1,0 +1,17 @@
+[DEFAULT]
+ignoreip = 127.0.0.1/8 ::1 192.168.56.1
+bantime = 3600
+findtime = 600
+maxretry = 5
+
+[sshd]
+enabled = true
+
+[asterisk]
+enabled = true
+filter = asterisk
+port = 5060
+protocol = udp
+backend = polling
+logpath = /var/log/asterisk/messages.log
+
